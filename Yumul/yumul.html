@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        
+        /* Styling the body and fonts */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.png'); /* Background image */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed; /* Makes the background fixed while scrolling */
+            background-repeat: no-repeat; /* Prevents the background from repeating */
+        }
+
+        /* Container for all content */
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #aeabab;
+            color: rgba(255, 253, 253, 0.515);
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Profile picture */
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation styles */
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* About section */
+        #about {
+            background-color: rgba(166, 135, 135, 0.429);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #about h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Projects section */
+        #projects {
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        #projects h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-item {
+            background-color: rgba(164, 152, 152, 0.559);
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-item h3 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .project-item p {
+            margin-top: 0.5rem;
+        }
+
+        /* Contact form styles */
+        #contact {
+            background-color: #f99d7ccf;
+            color: rgb(255, 255, 255);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            margin-bottom: 1rem;
+        }
+
+        #contact form input, #contact form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        #contact form button {
+            padding: 0.8rem 2rem;
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #contact form button:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: rgb(255, 255, 255);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="jake.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Jake Lester R. Yumul, a passionate web developer and designer with a knack for building elegant and responsive websites. I enjoy transforming ideas into reality using code.</p>
+            <p><strong>Birthday:</strong> December 15, 2002</p>
+            <p><strong>Hobbies:</strong> Coding, Photography, Traveling, Gaming, and playing basketball.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="project-item">
+                <h3>Project 1: Portfolio Website</h3>
+                <p>A personal portfolio website designed to showcase my work and skills.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>Project 2: E-commerce Store</h3>
+                <p>An online e-commerce website built with HTML, CSS, and JavaScript to provide a smooth shopping experience.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>Project 3: Blog Platform</h3>
+                <p>A blogging platform where users can publish and share articles on various topics, built using modern web technologies.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Yumul Jake Lester R." required>
+                <input type="email" name="email" placeholder="0jakelester.yumul0@gmail.com" required>
+                <textarea name="message" rows="4" placeholder="Hi, I'm Jake Lester R. Yumul, a web developer with a passion for turning creative ideas into functional and visually appealing websites. I specialize in front-end development, bringing designs to life using HTML, CSS, and JavaScript, while always keeping the user experience in mind.
+
+                Whether I'm building a sleek portfolio or developing a dynamic e-commerce platform, I love diving into the details to ensure everything is optimized, responsive, and intuitive. I'm constantly learning new technologies and improving my skills to stay at the forefront of the web development industry.
+                
+                In my free time, I enjoy exploring the latest tech trends, collaborating with fellow developers, and working on personal projects that challenge my creativity and problem-solving abilities. Let's create something amazing together!" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio | Designed by Jake Lester R. Yumul</p>
+    </footer>
+
+</body>
+</html>
