@@ -79,7 +79,6 @@
             width: 100%;
         }
         .gallery-item {
-            display: block; /* Ensure anchor behaves like a block element */
             background-image: url('christmas_background.jpg'); /* Replace with your background image */
             background-size: cover; /* Cover the entire card */
             background-position: center; /* Center the image */
@@ -92,8 +91,6 @@
             transition: transform 0.3s; /* Animation */
             height: 300px; /* Height */
             width: 300px; /* Width */
-            text-decoration: none; /* Remove underline from links */
-            color: inherit; /* Inherit text color */
         }
         .gallery-item:hover {
             transform: scale(1.1); /* Scale effect on hover */
@@ -138,36 +135,36 @@
     </section>
     
     <section class="gallery">
-        <a href="Parajas/about.html" class="gallery-item">
+        <div class="gallery-item">
             <img src="homeJonathan.jpg" alt="Jonathan Parajas" class="profile-image">
             <p class="details">Jonathan Parajas</p>
             <p class="description">Team Leader</p>
-        </a>
-        <a href="Magbag/index.html" class="gallery-item">
+        </div>
+        <div class="gallery-item">
             <img src="homeJerem.jpg" alt="Jeremiah Ira Magbag" class="profile-image">
             <p class="details">Jeremiah Ira Magbag</p>
             <p class="description">Developer</p>
-        </a>
-        <a href="Torio/portfolio.html" class="gallery-item">
+        </div>
+        <div class="gallery-item">
             <img src="homeAshley.jpg" alt="John Ashley Torio" class="profile-image">
             <p class="details">John Ashley Torio</p>
             <p class="description">Designer</p>
-        </a>
-        <a href="Malana/index.html" class="gallery-item">
+        </div>
+        <div class="gallery-item">
             <img src="homeRose.jpg" alt="Rose Anne Malana" class="profile-image">
             <p class="details">Rose Anne Malana</p>
             <p class="description">Project Manager</p>
-        </a>
-        <a href="Calma/calma.html" class="gallery-item">
+        </div>
+        <div class="gallery-item">
             <img src="homePaul.jpg" alt="Paul Calma" class="profile-image">
             <p class="details">Paul Calma</p>
             <p class="description">QA Tester</p>
-        </a>
-        <a href="Yumul/yumul.html" class="gallery-item">
+        </div>
+        <div class="gallery-item">
             <img src="homeJake.jpg" alt="Jake Yumul" class="profile-image">
             <p class="details">Jake Yumul</p>
             <p class="description">Content Writer</p>
-        </a>
+        </div>
     </section>
 </div>
 
