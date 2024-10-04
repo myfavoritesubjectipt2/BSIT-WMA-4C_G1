@@ -79,6 +79,7 @@
             width: 100%;
         }
         .gallery-item {
+            display: block; /* Ensure anchor behaves like a block element */
             background-image: url('christmas_background.jpg'); /* Replace with your background image */
             background-size: cover; /* Cover the entire card */
             background-position: center; /* Center the image */
@@ -91,6 +92,8 @@
             transition: transform 0.3s; /* Animation */
             height: 300px; /* Height */
             width: 300px; /* Width */
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit text color */
         }
         .gallery-item:hover {
             transform: scale(1.1); /* Scale effect on hover */
@@ -122,10 +125,10 @@
 <header>
     <div class="logo">Group 1</div>
     <nav>
-        <a href="index.html"><i class="fas fa-home"></i> Home</a>
-        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
-        <a href="services.html"><i class="fas fa-concierge-bell"></i> Education</a>
-        <a href="contact.html"><i class="fas fa-envelope"></i> Hobbies</a>
+        <a href="Parajas/index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="Parajas/about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="Parajas/services.html"><i class="fas fa-concierge-bell"></i> Education</a>
+        <a href="Parajas/contact.html"><i class="fas fa-envelope"></i> Hobbies</a>
     </nav>
 </header>
 
@@ -135,36 +138,36 @@
     </section>
     
     <section class="gallery">
-        <div class="gallery-item">
-            <img src="homeJonathan.jpg" alt="Jonathan Parajas" class="profile-image">
+        <a href="Parajas/about.html" class="gallery-item">
+            <img src="Parajas/homeJonathan.jpg" alt="Jonathan Parajas" class="profile-image">
             <p class="details">Jonathan Parajas</p>
             <p class="description">Team Leader</p>
-        </div>
-        <div class="gallery-item">
-            <img src="homeJerem.jpg" alt="Jeremiah Ira Magbag" class="profile-image">
+        </a>
+        <a href="Magbag/index.html" class="gallery-item">
+            <img src="Parajas/homeJerem.jpg" alt="Jeremiah Ira Magbag" class="profile-image">
             <p class="details">Jeremiah Ira Magbag</p>
             <p class="description">Developer</p>
-        </div>
-        <div class="gallery-item">
-            <img src="homeAshley.jpg" alt="John Ashley Torio" class="profile-image">
+        </a>
+        <a href="Torio/portfolio.html" class="gallery-item">
+            <img src="Parajas/homeAshley.jpg" alt="John Ashley Torio" class="profile-image">
             <p class="details">John Ashley Torio</p>
             <p class="description">Designer</p>
-        </div>
-        <div class="gallery-item">
-            <img src="homeRose.jpg" alt="Rose Anne Malana" class="profile-image">
+        </a>
+        <a href="Malana/index.html" class="gallery-item">
+            <img src="Parajas/homeRose.jpg" alt="Rose Anne Malana" class="profile-image">
             <p class="details">Rose Anne Malana</p>
             <p class="description">Project Manager</p>
-        </div>
-        <div class="gallery-item">
-            <img src="homePaul.jpg" alt="Paul Calma" class="profile-image">
+        </a>
+        <a href="Calma/calma.html" class="gallery-item">
+            <img src="Parajas/homePaul.jpg" alt="Paul Calma" class="profile-image">
             <p class="details">Paul Calma</p>
             <p class="description">QA Tester</p>
-        </div>
-        <div class="gallery-item">
-            <img src="homeJake.jpg" alt="Jake Yumul" class="profile-image">
+        </a>
+        <a href="Yumul/yumul.html" class="gallery-item">
+            <img src="Parajas/homeJake.jpg" alt="Jake Yumul" class="profile-image">
             <p class="details">Jake Yumul</p>
             <p class="description">Content Writer</p>
-        </div>
+        </a>
     </section>
 </div>
 
