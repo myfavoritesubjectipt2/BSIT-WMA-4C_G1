@@ -20,9 +20,8 @@
             background-color: #5c4d7d; /* Updated header color */
             color: white;
             padding: 10px 20px;
-            padding-left: 0%;
             display: flex;
-            align-items: center; /* Center vertically */
+            align-items: flex-end; /* Align items to the baseline */
             justify-content: space-between;
             position: absolute;
             width: 100%;
@@ -32,10 +31,10 @@
         .logo {
             font-size: 24px;
             font-weight: bold;
+            margin-bottom: 5px; /* Optional: Adjust bottom margin for better positioning */
         }
         nav {
             display: flex;
-            padding-right: 0%;
         }
         nav a {
             color: white; /* Text color in navbar */
@@ -55,7 +54,7 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: center; /* Center items horizontally */
             color: black; /* Text color */
             margin-top: 60px; /* Space for the fixed header */
         }
@@ -63,8 +62,8 @@
             font-size: 3em;
             font-family: 'Poppins', sans-serif;
             text-align: center; /* Center the text */
-            margin-top: 0%; /* Position directly below the header */
-            margin-bottom: 10px; /* Reduced margin below welcome text */
+            margin-top: 0; /* Position directly below the header */
+            margin-bottom: 20px; /* Increased margin below welcome text */
             width: 100%; /* Full width for alignment */
         }
         .letter {
@@ -73,10 +72,11 @@
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Center items */
             gap: 20px; /* Space between items */
             max-width: 1200px; /* Max width for gallery */
             width: 100%;
+            justify-items: center; /* Center each item in the grid */
         }
         .gallery-item {
             display: block; /* Ensure anchor behaves like a block element */
@@ -118,6 +118,12 @@
             font-weight: bold; /* Bold text */
             margin-top: 5px; /* Adjusted space above details */
         }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr; /* Stack items in a single column */
+            }
+        }
     </style>
 </head>
 <body>
@@ -138,7 +144,7 @@
     </section>
     
     <section class="gallery">
-        <a href="../Parajas/index.html" class="gallery-item">
+        <a href="../Home/index.html" class="gallery-item">
             <img src="../Parajas/homeJonathan.jpg" alt="Jonathan Parajas" class="profile-image">
             <p class="details">Jonathan Parajas</p>
             <p class="description">Team Leader</p>
