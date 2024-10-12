@@ -1,0 +1,306 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="torioPortfolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        
+
+
+        <ul class="nav-headbar">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#social">Socials</a></li>
+        </ul>
+        
+        <div class="menu-btn">
+            
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+        </div>
+        
+        
+
+    </header>
+
+<div >
+    <a href="#" class="header" id="typingText"> </a>
+</div>
+
+    <section id="home" class="home">
+        <div class="home-text">
+            <span>Developer</span>
+            <h1 class="maintext">iPortfolio</h1>
+            <p>We develop innovative projects that enhance user experiences <br>and address everyday challenges.</p>
+ 
+            <div class="main-btn">
+                <button class="btn" onclick="downloadResume('torioResume.html')">Resume</button>
+            </div>
+            
+            
+        
+
+            <div class="main-btn">
+                <button class="btn two" id="hire">Hire Me!</button>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+
+    
+
+    <section id="about">
+        <style>
+        #about {
+            background-color: 5px 5px 7px rgba(131, 122, 122, 0.5);
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            
+            box-shadow: 5px 5px 7px rgba(158, 147, 147, 0.5);
+            font-family: 'Arial', sans-serif;
+            
+        }
+        
+        #about h2 {
+            color: #ffffff;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        #about p {
+            color: #ffffff;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: center;
+        }
+        #about p br {
+    margin-bottom: 10px;
+}
+
+    </style>
+
+
+        <h2>About Me</h2>
+        <p>
+            Hi, I am John Ashley Torio, a future software developer. <br> 
+            I have successfully developed an Airline Reservation System application using Java as the primary programming language. <br> 
+            I specialize in building efficient and scalable software solutions, and I am always eager to learn and grow in this ever-evolving field.
+        </p>
+    </section>
+    
+
+
+
+
+
+    
+
+    <section id="portfolio">
+
+        <style>
+
+#portfolio {
+    padding: 50px 15%;
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: var(--text-color);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px; 
+    
+}
+
+.portfolio-item {
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px; 
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s; 
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); 
+}
+
+.portfolio-item img {
+    max-width: 100%; 
+    border-radius: 10px; 
+    margin-bottom: 15px; 
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem; 
+    margin: 10px 0; 
+}
+
+.portfolio-item p {
+    font-size: 1rem; 
+    color: #c3c3c3; 
+}
+.portbottom{
+    margin-bottom:40px;
+    text-align: center;
+}
+
+        </style>
+
+        <div class="portbottom">
+        <h2>Portfolio</h2>
+        <p>Check out our portfolio showcasing a variety of projects we have worked on.</p>
+        </div>
+            
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <img src="airline.png">
+                    <h3>Airline Reservation System</h3>
+                    <p>I created an Airline Reservation System with the only use of Java as my programming language.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="music.png">
+                    <h3>Music App Design</h3>
+                    <p>I designed Music App where you can collab to others as well as having a lyrics for user who wants to sing.</p>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+    
+
+    <section id="contact">
+<style>
+.contact{
+    padding: 20px;
+    text-align: center;
+
+}
+
+</style>
+        
+        <div class="contact">
+            <p>
+        <h2>Contact</h2>
+        </p>
+        <p>Feel free to contact me <br></p>
+        <p>+63 9435-543-970 <br></p>
+    </div>
+
+    </section>
+
+    <section id="social">
+        <style>
+.icontent {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
+   
+}
+
+.icontent a {
+    margin: 0 10px; 
+    margin-bottom:40px;
+}
+
+.icontent img {
+    width: 30px; 
+    height: auto; 
+    transition: transform 0.3s; 
+}
+
+
+
+        </style>
+        <div class="icontent">
+                <a href="https://www.facebook.com/ashley.torio.98"><img src="facebook.png"/></a>
+                <a href="https://www.instagram.com/"><img src="instagram2.png"/></a>
+                
+        </div>
+       
+    </section>
+
+    
+    
+    <script>
+        function downloadResume(resumeFileName) {
+    
+    var link = document.createElement('a');
+    link.href = resumeFileName; 
+    link.download = resumeFileName; 
+    document.body.appendChild(link); 
+    link.click(); 
+    document.body.removeChild(link); 
+
+    
+    alert("Click Ok To Continue!");
+
+
+
+
+
+
+        
+
+            document.querySelectorAll('.nav-bar a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+        }
+    </script>
+
+<script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const text = "Hi! I'm John Ashley Torio";
+            const typingTextElement = document.getElementById("typingText");
+            let index = 0;
+
+            function typeText() {
+                if (index < text.length) {
+                    typingTextElement.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeText, 100); 
+                } else {
+                    
+                    setTimeout(() => {
+                        typingTextElement.textContent = ''; 
+                        index = 0;
+                        typeText(); 
+                    }, 1000); 
+                }
+            }
+
+            typeText();
+        });
+</script>
+<script>
+    document.getElementById('hire').addEventListener('click', function() {
+    alert('Thank you for hiring me!');
+});
+
+</script>
+
+</body>
+</html>
